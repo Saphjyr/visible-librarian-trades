@@ -2,6 +2,8 @@ VLT is client-side mod that displays the nearest villager's book trade on lecter
 
 The main purpose of this mod is to make rolling librarian trades easier, which is very useful when making trading halls.
 
+Curseforge: https://www.curseforge.com/minecraft/mc-mods/visible-librarian-trades
+
 # How does it work?
 
 Villager trades are stored on the server, and only sent to the client when the player interacts with the villager. This mod interacts with all new librarians in range (so quickly that the player can't notice it) and remembers it's book trade. The name of the enchantment is then displayed on lecterns.
