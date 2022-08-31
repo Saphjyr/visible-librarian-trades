@@ -2,10 +2,10 @@ package net.vltrades;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 
 
-public class VisibleLibrarianTradesClient implements ModInitializer {
+public class VisibleLibrarianTradesClient implements ClientModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
@@ -15,7 +15,7 @@ public class VisibleLibrarianTradesClient implements ModInitializer {
 
 	@Environment(EnvType.CLIENT)
 	@Override
-	public void onInitialize() {
+	public void onInitializeClient() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
