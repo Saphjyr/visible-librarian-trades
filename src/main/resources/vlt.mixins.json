@@ -6,10 +6,10 @@
   "mixins": [
   ],
   "client": [
-    "ClientPlayNetworkHandlerMixin",
     "VillagerClothingFeatureRendererMixin",
     "LecternBlockEntityRendererMixin",
-    "BlockMixin"
+    "BlockMixin",
+    "ClientPlayNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

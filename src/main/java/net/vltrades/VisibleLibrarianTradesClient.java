@@ -11,6 +11,7 @@ public class VisibleLibrarianTradesClient implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static EnchantmentManager enchantmentManager = null;
 	public static LecternManager lecternManager = null;
+	public static Boolean displayIcons = false;
 
 	@Environment(EnvType.CLIENT)
 	@Override
@@ -28,6 +29,14 @@ public class VisibleLibrarianTradesClient implements ModInitializer {
 
 	public static LecternManager getLecternManager() {
 		return lecternManager;
+	}
+
+	public static Boolean getDisplayIcons() {
+		return displayIcons;
+	}
+
+	public static void toggleDisplayIcons() {
+		displayIcons = !displayIcons;
 	}
 
 }

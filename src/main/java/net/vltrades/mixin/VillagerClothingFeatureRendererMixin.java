@@ -32,9 +32,9 @@ public abstract class VillagerClothingFeatureRendererMixin<T extends LivingEntit
 		super(context);
 	}
 	
-	@Inject(at = @At("TAIL"), method = "render")
+	@Inject(at = @At("TAIL"), method = "render(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;ILnet/minecraft/entity/LivingEntity;FFFFFF)V")
 	private void render(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity, float f, float g, float h, float j, float k, float l, CallbackInfo info) {
-		if (((Entity)livingEntity).isInvisible()) {
+		if (((Entity)livingEntity).isInvisible() || !VisibleLibrarianTradesClient.getDisplayIcons()) {
             return;
         }
 		EnchantmentManager enchantmentManager = VisibleLibrarianTradesClient.getEnchantmentManager();
